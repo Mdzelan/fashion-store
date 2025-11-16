@@ -65,7 +65,7 @@ const filtereData = data?.filter((item) =>
               {
                 filtereData?.length > 0 ?(
                   <div className='flex flex-col justify-center items-center'> 
-                  <div className='grid lg:grid-cols-3 md:grid-cols-3 grid-cols-2 lg:gap-14 md:gap-10 gap-3 mt-10'>
+                  <div className=' grid lg:grid-cols-3 md:grid-cols-2 grid-cols-2 lg:gap-14 md:gap-10 gap-3 mt-5 ml-4  '>
                 {
                   filtereData?.slice(page *9 - 9, page * 9).map((products, index)=>{
                     return <ProductCard key={index} products={products}/>

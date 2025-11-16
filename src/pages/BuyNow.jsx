@@ -30,15 +30,18 @@ const BuyNow = ({ location, getLocation }) => {
   const totalPrice = (buyNowItem.discountedPrice || buyNowItem.price) * quantity;
 
   return (
-    <div className="max-w-[1440px] mx-auto px-2 mb-10">
-      <h1 className="text-2xl font-bold mb-5">Buy Now Product</h1>
+    <div className="max-w-[1440px] mx-auto px-2 mb-10 mt-10">
+     
 
-      <div className="flex gap-5 items-center">
-        <img
+      <div className="flex lg:flex-row md:flex-row flex-col gap-5 items-center ">
+        <div className="w-80 h-70  ">
+          <img
           src={buyNowItem.image}
           alt={buyNowItem.title}
-          className="w-80 h-70 object-cover rounded-md"
+          class="w-full h-full object-contain rounded-md"
         />
+        </div>
+      
 
         <div className="flex flex-col gap-3">
           <h2 className="text-xl font-bold">{buyNowItem.title}</h2>

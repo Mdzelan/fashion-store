@@ -16,7 +16,7 @@ const Cart = ({ location, getLocation }) => {
   const totalPrice = cartItem.reduce(
   (total, item) => total + item.price * item.quantity,
   0
-)
+  )
 
   return (
     <div className='max-w-[1440px] mx-auto px-2 mb-10'>
@@ -129,6 +129,7 @@ const Cart = ({ location, getLocation }) => {
 
               </div>
             </div>
+            
 
           </div>
         </div> : <div className='flex flex-col gap-3 justify-center items-center h-[600px]'>

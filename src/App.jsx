@@ -79,7 +79,7 @@ const App = () => {
         <Route path="/category/:category" element={<CategoryProduct/>}></Route>
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/buynow" element ={<BuyNowPage/>}/>
+        <Route path="/buynow" element ={<ProtectedRoute><BuyNowPage location={location} getLocation={getLocation}/></ProtectedRoute> }/>
         <Route path="/cart" element={<ProtectedRoute><Cart location={location} getLocation={getLocation}/></ProtectedRoute> } />
       </Routes>
       <Footer/>
