@@ -52,8 +52,8 @@ const filtereData = data?.filter((item) =>
   const dynamicPage = Math.ceil(filtereData?.length / 8)
 
   return (
-    <div>
-       <div className='max-w-[1440px] mx-auto px-2 mb-10'>
+    <div className='ml-5'>
+       <div className='max-w-[1440px] mx-auto px-2 mb-10 '>
         <MobilFilter openFilter={openFilter} setOpenFilter={setOpenFilter} search={search} setSearch ={setSearch} brand={brand} setBrand = {setBrand}priceRange={priceRange} setPriceRange={setPriceRange} category={category} setCategory={setCategory} handleCategoryChange={handleCategoryChange} handleBrandeChange={handleBrandeChange}/>
         {
 

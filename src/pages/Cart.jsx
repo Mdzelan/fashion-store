@@ -125,7 +125,7 @@ const Cart = ({ location, getLocation }) => {
                     <button className='bg-white text-black border-gray-200 px-4 cursor-pointer py-1 rounded-md'>Apply</button>
                   </div>
                 </div>
-                <button className='bg-red-500 text-white px-3 py-2 rounded-md w-full cursor-pointer mt-3'>Proceed to Checkout</button>
+                <button className='bg-red-500 hover:scale-105 text-white px-3 py-2 rounded-md w-full cursor-pointer mt-3'>Proceed to Checkout</button>
 
               </div>
             </div>
@@ -135,7 +135,7 @@ const Cart = ({ location, getLocation }) => {
         </div> : <div className='flex flex-col gap-3 justify-center items-center h-[600px]'>
           <h1 className='text-red-500 font-bold text-5xl text-muted'>Oh! Your Cart Is Empty</h1>
           <img src={emptyCart} alt="" className='w-[400px]' />
-          <button onClick={()=>navigate('/products')} className='bg-red-500 text-white px-2 py-2 rounded-md cursor-pointer'>Countinue Shopping</button>
+          <button onClick={()=>navigate('/products')} className='bg-red-500 text-white hover:scale-105 px-2 py-2 rounded-md cursor-pointer'>Countinue Shopping</button>
 
         </div>
       }

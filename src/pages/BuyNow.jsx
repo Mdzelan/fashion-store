@@ -174,7 +174,7 @@ const BuyNow = ({ location, getLocation }) => {
               <button className='bg-white text-black border-gray-200 px-4 cursor-pointer py-1 rounded-md'>Apply</button>
             </div>
           </div>
-          <button className='bg-red-500 text-white px-3 py-2 rounded-md w-full cursor-pointer mt-3'>Proceed to Checkout</button>
+          <button className='bg-red-500 text-white px-3 py-2 rounded-md  cursor-pointer mt-3 hover:scale-105'>Proceed to Checkout</button>
 
         </div>
       </div>

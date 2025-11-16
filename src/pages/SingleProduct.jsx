@@ -94,7 +94,7 @@ const SingleProduct = () => {
                 buyNow(singleProduct);
                 navigate("/buynow");
               }}
-              className="px-6 py-2 text-lg bg-yellow-600 text-white rounded-md flex items-center gap-2 hover:bg-yellow-700"
+              className="px-6 py-2 text-lg bg-yellow-600 text-white rounded-md flex items-center gap-2 hover:bg-yellow-700 hover:scale-105"
             >
               <IoCartOutline className="w-6 h-6" /> Buy Now
             </button>
