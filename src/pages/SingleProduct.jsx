@@ -94,11 +94,11 @@ const SingleProduct = () => {
                 buyNow(singleProduct);
                 navigate("/buynow");
               }}
-              className="px-6 py-2 text-lg bg-yellow-600 text-white rounded-md flex items-center gap-2 hover:bg-yellow-700 hover:scale-105"
+              className="px-6 py-2 text-lg bg-yellow-600 text-white rounded-md flex items-center gap-2 hover:bg-yellow-700 hover:scale-105 font-semibold"
             >
-              <IoCartOutline className="w-6 h-6" /> Buy Now
+              <IoCartOutline className="w-6 h-6 text-black font-bold" /> Buy Now
             </button>
-            <button onClick={() => addToCart(SingleProduct)} className='px-6 flex gap-2 py-2 text-lg bg-linear-to-r  from-[#949494] to-[#363636] hover:scale-105 font-bold text-white rounded-md'><IoCartOutline className='w-6 h-6' /> Add to Cart</button>
+            <button onClick={() => addToCart(SingleProduct)} className='px-6 flex gap-2 py-2 text-lg bg-linear-to-r  from-[#949494] to-[#363636] hover:scale-105 font-bold text-white rounded-md'><IoCartOutline className='w-6 h-6 ' /> Add to Cart</button>
           </div>
         </div>
       </div>
