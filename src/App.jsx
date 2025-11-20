@@ -1,5 +1,5 @@
 import React from 'react'
-import {BrowserRouter, Routes, Route } from 'react-router-dom'
+import {BrowserRouter, Routes, Route, HashRouter } from 'react-router-dom'
 import Home from './pages/Home'
 import Products from './pages/Products'
 import About from './pages/About'
@@ -65,7 +65,8 @@ const App = () => {
   },[cartItem])
 
   return (
-    <BrowserRouter>
+    // <BrowserRouter>
+    <HashRouter>
       <Navbar
         location={location}
         getLocation={getLocation}
@@ -83,7 +84,8 @@ const App = () => {
         <Route path="/cart" element={<ProtectedRoute><Cart location={location} getLocation={getLocation}/></ProtectedRoute> } />
       </Routes>
       <Footer/>
-    </BrowserRouter>
+      </HashRouter>
+    //</BrowserRouter> 
   );
 };
 

@@ -63,7 +63,7 @@ const Navbar = ({ location, getLocation, openDropdown, setOpenDropdown }) => {
         {/* menu section */}
         <nav className="flex gap-7 items-center ">
           <ul className="md:flex gap-7 items-center    text-xl font-semibold hidden">
-            <NavLink to={'/'} className={({ isActive }) => `${isActive ? "border-b-3 transition-all border-black" : "text-black"}  cursor-pointer hover:scale-105`}><li>Home</li></NavLink>
+            <NavLink to={'/'} className={({ isActive }) => `${isActive ? "border-b-3 transition-all hover:scale-105 border-black" : "text-black"}  cursor-pointer hover:scale-105`}><li>Home</li></NavLink>
             <NavLink to={'/Products'} className={({ isActive }) => `${isActive ? "border-b-3 transition-all border-black" : "text-black"} cursor-pointer hover:scale-105`}><li>Products</li></NavLink>
             <NavLink to={'/about'} className={({ isActive }) => `${isActive ? "border-b-3 transition-all border-black" : "text-black"} hover:scale-105 cursor-pointer`}><li>About</li></NavLink>
             <NavLink to={'/contact'} className={({ isActive }) => `${isActive ? "border-b-3 transition-all border-black" : "text-black"} hover:scale-105 cursor-pointer`}><li>Contact</li></NavLink>

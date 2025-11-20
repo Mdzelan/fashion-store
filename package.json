@@ -13,7 +13,7 @@
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
-    "@clerk/clerk-react": "^5.53.4",
+    "@clerk/clerk-react": "^5.56.0",
     "@tailwindcss/vite": "^4.1.16",
     "axios": "^1.13.2",
     "lottie-react": "^2.4.1",

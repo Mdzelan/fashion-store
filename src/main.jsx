@@ -17,7 +17,7 @@ createRoot(document.getElementById('root')).render(
   // <StrictMode>
   <DataProvider>
     <CartProvider>
-      <ClerkProvider publishableKey={PUBLISHABLE_KEY}>
+      <ClerkProvider publishableKey={PUBLISHABLE_KEY}> 
         <App />
         <ToastContainer
           position="bottom-right"
